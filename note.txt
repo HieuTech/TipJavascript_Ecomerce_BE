@@ -1,0 +1,8 @@
+morgan là ghi log mỗi khi user gửi request.
+
+helmet ( khi trien khai dự án backend mà có thanh toán tiền) thì có 1 số tổ chức họ sẽ dò công nghệ của mình. 
+curl http://localhost:3055 --include (sẽ hiện ra header và công nghệ của mình)
+Vậy helmet dùng để che cái header ko cho thay cong nghe su dung
+
+khi dùng compression là giảm payload đi 10 lần.
+
