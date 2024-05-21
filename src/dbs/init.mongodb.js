@@ -2,12 +2,14 @@
 
 //trong mongodb ko can dong ket noi lien tuc
 const mongoose = require('mongoose');
+const { db: {host, userName, password, name}} = require("../configs/config.mongodb");
 //kiem tra co bao nhieu connect
 const { countConnect } = require("../helper/check.connect");
 
 const connectStr =
-  "mongodb+srv://rosasuongtech:hieu123@cluster0.klvcplw.mongodb.net/shopdev";
+  `${host}://${userName}:${password}@cluster0.klvcplw.mongodb.net/${name}`;
 
+  console.log(`Connection: ${connectStr}`);
   //single ton
   class Database{
 
@@ -39,5 +41,9 @@ const connectStr =
     }
   }
 
+
+     
+
+
   const instanceMongodb = Database.getInstance();
-  module.exports = instanceMongodb;
+  module.exports = { instanceMongodb };
