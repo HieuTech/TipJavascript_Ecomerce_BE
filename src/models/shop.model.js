@@ -2,10 +2,10 @@
 
 const { model, Schema, Types } = require("mongoose");
 
-//giông tên bảng
+//giông 1 row
 const DOCUMENT_NAME = "Shop";
 
-//giống tện database
+//giong 1 bang
 const COLLECTION_NAME = "Shops";
 
 //!dmbg
